@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Processing Brasil - Links</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;800&display=swap" rel="stylesheet"> 
+<style>
+  :root, html {
+    font-size: 100%;
+  }
+
+  :root {
+    --base-font: 'Sora', sans-serif;;
+    --cor-verde: #57D8BA;
+    --cor-rosa: #CC36C1;
+    --cor-roxo: #483197;
+    --cor-creme: #FFFAF2;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+  }
+
+  body {
+    font-family: var(--base-font);
+    color: var(--cor-roxo);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    background-color: var(--cor-roxo);
+    color: var(--cor-creme);
+    padding: 5vw;
+    text-align: center;
+  }
+
+  h1 {
+    margin-bottom: 1em;
+    text-transform: uppercase;
+    color: var(--cor-rosa)
+  }
+
+  .links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .links li {
+    margin-bottom: 1em;
+    padding: 1em 1em;
+    background-color: var(--cor-verde);
+    border-radius: 0.25em;
+  }
+
+  .links li a,
+  .links li a:visited {
+    text-decoration: none;
+    color: var(--cor-creme);
+  }
+
+  .links li:hover {
+    cursor: pointer;
+    background-color: var(--cor-rosa);
+    transition: all ease-in-out .2s;
+  }
+
+  #background-video {
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>Processing Brasil</h1>
+    <ul class="links">
+      <li><a href="https://pcd2022.encontrosdigitais.com.br/programacao/">Processing Community Day Brasil 2022</a></li>
+      <li><a href="https://t.me/programacaocriativa">Grupo do Telegram: Programação Criativa</a></li>
+      <li><a href="https://garoa.net.br/wiki/Noite_de_Processing">Noite de Processing</a></li>
+    </ul>
+  </div>
+  <video id="background-video" autoplay loop muted poster="https://pcd2022.encontrosdigitais.com.br/videos/video-poster.jpg">
+    <source src="https://pcd2022.encontrosdigitais.com.br/videos/fundo.mp4" type="video/mp4">
+  </video>
+</body>
+</html>
