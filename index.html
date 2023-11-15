@@ -5,20 +5,24 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Processing Brasil - Links</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;800&display=swap" rel="stylesheet"> 
-<style>
+  <style>
+
+  @font-face {
+    font-family: "TASA-Orbiter";
+    src:
+      url("../static/TASAOrbiterVF.woff2") format("woff2");
+  }
+
   :root, html {
     font-size: 100%;
   }
 
   :root {
-    --base-font: 'Sora', sans-serif;;
-    --cor-verde: #57D8BA;
-    --cor-rosa: #CC36C1;
-    --cor-roxo: #483197;
-    --cor-creme: #FFFAF2;
+    --base-font: 'TASA-Orbiter', sans-serif;;
+    --cor-a: #52fe54;
+    --cor-b: #fd5554;
+    --cor-c: #4e57fa;
+    --cor-d: #000000;
   }
 
   * {
@@ -31,19 +35,20 @@
     height: 100%;
     width: 100%;
     font-size: 100%;
+    background-image: url('../static/PCD-Br-2023-fundo.png');
   }
 
   body {
     font-family: var(--base-font);
-    color: var(--cor-roxo);
+    color: var(--cor-c);
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
   .container {
-    background-color: var(--cor-roxo);
-    color: var(--cor-creme);
+    background-color: var(--cor-c);
+    color: var(--cor-d);
     padding: 5vw;
     text-align: center;
   }
@@ -51,7 +56,7 @@
   h1 {
     margin-bottom: 1em;
     text-transform: uppercase;
-    color: var(--cor-rosa)
+    color: var(--cor-b)
   }
 
   .links {
@@ -63,19 +68,19 @@
   .links li {
     margin-bottom: 1em;
     padding: 1em 1em;
-    background-color: var(--cor-verde);
+    background-color: var(--cor-a);
     border-radius: 0.25em;
   }
 
   .links li a,
   .links li a:visited {
     text-decoration: none;
-    color: var(--cor-creme);
+    color: var(--cor-d);
   }
 
   .links li:hover {
     cursor: pointer;
-    background-color: var(--cor-rosa);
+    background-color: var(--cor-b);
     transition: all ease-in-out .2s;
   }
 
@@ -95,13 +100,14 @@
   <div class="container">
     <h1>Processing Brasil</h1>
     <ul class="links">
+      <li><a href="https://forms.gle/WLJBv522EkAZknoM9">Chamada Aberta PCD Brasil 2023</a></li>
       <li><a href="https://pcd2022.encontrosdigitais.com.br/programacao/">Processing Community Day Brasil 2022</a></li>
       <li><a href="https://t.me/programacaocriativa">Grupo do Telegram: Programação Criativa</a></li>
       <li><a href="https://garoa.net.br/wiki/Noite_de_Processing">Noite de Processing</a></li>
     </ul>
   </div>
-  <video id="background-video" autoplay loop muted poster="https://pcd2022.encontrosdigitais.com.br/videos/video-poster.jpg">
+  <!-- <video id="background-video" autoplay loop muted poster="https://pcd2022.encontrosdigitais.com.br/videos/video-poster.jpg">
     <source src="https://pcd2022.encontrosdigitais.com.br/videos/fundo.mp4" type="video/mp4">
-  </video>
+  </video> -->
 </body>
 </html>
