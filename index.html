@@ -7,22 +7,14 @@
   <title>Compoética - Links</title>
   <style>
 
-  @font-face {
-    font-family: "TASA-Orbiter";
-    src:
-      url("static/TASAOrbiterVF.woff2") format("woff2");
-  }
-
   :root, html {
     font-size: 100%;
   }
 
   :root {
-    --base-font: 'TASA-Orbiter', sans-serif;;
-    --cor-a: #52fe54;
-    --cor-b: #fd5554;
-    --cor-c: #4e57fa;
-    --cor-d: #000000;
+    --base-font: sans-serif;
+    --cor-a: #000;
+    --cor-b: #fff;
   }
 
   * {
@@ -35,27 +27,33 @@
     height: 100%;
     width: 100%;
     font-size: 100%;
-    background-image: url('static/PCD-Br-2023-fundo.png');
   }
 
   body {
     font-family: var(--base-font);
-    color: var(--cor-c);
+    color: var(--cor-b);
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url('static/CP-2025-Fundo-Assinatura.png');
   }
 
   .container {
-    background-color: var(--cor-c);
+    background-color: var(--cor-a);
     color: var(--cor-d);
-    padding: 5vw;
+    padding: 2rem;
     text-align: center;
+    max-width: 50ch;
   }
 
-  h1 {
-    margin-bottom: 1em;
+  .assinatura {
+    margin-bottom: 2rem;
+  }
+
+  .assinatura h1 {
+    margin-bottom: 0;
     text-transform: uppercase;
+    font-weight: normal;
     color: var(--cor-b)
   }
 
@@ -69,17 +67,23 @@
     margin-bottom: 1em;
     padding: 1em 1em;
     background-color: var(--cor-a);
+    border: 1px solid var(--cor-b);
     border-radius: 0.25em;
+  }
+
+  .links li:last-child {
+    margin-bottom: 0;
   }
 
   .links li a,
   .links li a:visited {
     text-decoration: none;
-    color: var(--cor-d);
+    color: inherit;
   }
 
   .links li:hover {
     cursor: pointer;
+    color: var(--cor-a);
     background-color: var(--cor-b);
     transition: all ease-in-out .2s;
   }
@@ -98,8 +102,14 @@
 </head>
 <body>
   <div class="container">
-    <h1>Compoética - encontro brasileiro de programação criativa</h1>
+    <div class="assinatura">
+      <h1>Compoética</h1>
+      <p>Encontro Brasileiro de Programação Criativa</p>
+    </div>
+    
     <ul class="links">
+      <li><a href="https://forms.gle/hprdkTvRKPBQXTpR7">Compoética 2025:<br> Chamada Aberta Atividades</a></li>
+      <li><a href="https://compoetica.github.io/cp2025">Compoética 2025: Site</a></li>
       <li><a href="https://www.youtube.com/@compoetica">YouTube</a></li>
       <li><a href="https://t.me/programacaocriativa">Grupo do Telegram: Programação Criativa</a></li>
       <li><a href="https://compoetica.github.io/PCD-Brasil-2023">Processing Community Day Brasil 2023</a></li>
